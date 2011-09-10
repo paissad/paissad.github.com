@@ -1,0 +1,120 @@
+body {
+	color:#424347;
+}
+
+a, a:link, a:visited, h1.blog-entry-title, h1.blog-entry-title a, h1.blog-entry-title a:visited {
+	color:#9F0E19;
+}
+
+a:hover, a:active, h1.blog-entry-title a:hover, h1.blog-entry-title a:active {
+	color: #5F080F;
+}
+
+
+		#sidebarContainer {
+	float: left;
+	position: relative;
+	left: 45px;
+}
+
+#content {
+	margin-left: 360px;
+	margin-right: 60px;
+}
+
+body, .navcontainer ul a, .navcontainer ul a:visited{
+	font: 14px/20px Georgia, "Times New Roman", Times, serif;
+}
+
+#tapeTop {
+	width: 118px;
+	height: 128px;
+	background: url(images/tapeTop.gif) no-repeat;
+	position: absolute;
+	margin-left: 801px;
+	margin-top: -87px;
+}
+
+html>body #tapeTop {
+	width: 118px;
+	height: 128px;
+	background: url(images/tapeTop.png) no-repeat;
+	position: absolute;
+	margin-left: 801px;
+	margin-top: -87px;
+}
+
+#tapeBottomLeft {
+	width: 118px;
+	height: 128px;
+	background: url(images/tapeBottomLeft.gif) no-repeat;
+	position: absolute;
+	margin-left: -50px;
+	margin-top: -12px;
+}
+
+html>body #tapeBottomLeft {
+	width: 118px;
+	height: 128px;
+	background: url(images/tapeBottomLeft.png) no-repeat;
+	position: absolute;
+	margin-left: -50px;
+	margin-top: -12px;
+}
+
+#tapeBottomRight {
+	width: 76px;
+	height: 80px;
+	background: url(images/tapeBottomRight.gif) no-repeat;
+	position: absolute;
+	margin-left: 770px;
+	margin-top: 36px;
+}
+
+html>body #tapeBottomRight {
+	width: 76px;
+	height: 80px;
+	background: url(images/tapeBottomRight.png) no-repeat;
+	position: absolute;
+	margin-left: 770px;
+	margin-top: 36px;
+}
+
+#backPageBottom {
+	width: 596px;
+	height: 94px;
+	background: url(images/backPageBottom.gif) no-repeat;
+	margin-left: 240px;
+	display: block;
+}
+
+html>body #backPageBottom {
+	width: 596px;
+	height: 94px;
+	background: url(images/backPageBottom.png) no-repeat;
+	margin-left: 240px;
+	display: block;
+}
+
+#backPageSide {
+	width: 49px;
+	height: 402px;
+	background: url(images/backPageSide.gif) no-repeat;
+	display: block;
+	position: absolute;
+	margin-left: 873px;
+	margin-top: 60px;
+}
+
+html>body #backPageSide {
+	width: 49px;
+	height: 402px;
+	background: url(images/backPageSide.png) no-repeat;
+	display: block;
+	position: absolute;
+	margin-left: 873px;
+	margin-top: 60px;
+}
+
+
+		
