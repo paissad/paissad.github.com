@@ -1,8 +1,8 @@
 # Site settings
 title: Paissad
-description: 'Personal Page'
+description: 'Github Personal Page where i list my main projects'
 url: 'https://paissad.github.io'
-#baseurl: '/'
+baseurl: '/'
 google_analytics: 'UA-25639062-2'
 # disqus_shortname: 'your-disqus-name'
 
@@ -32,8 +32,8 @@ highlighter: rouge
 kramdown:
   # use Github Flavored Markdown
   input: GFM
-  # do not replace newlines by <br>s
+  # do not replace newlines by <br>
   hard_wrap: false
 
 gems: ['jekyll-paginate']
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock']
