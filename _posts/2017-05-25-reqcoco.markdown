@@ -2,10 +2,10 @@
 title:  "ReqCoCo"
 date:   2017-05-25 11:04:23
 categories: [projects]
-tags: [reqcoco,requirements,coverage]
+tags: [reqcoco,requirements,code,coverage,excel,pdf,html,maven,plugin]
 ---
 
-**ReqCoco** which stands for *Requirements Code Coverage* s a set of tools which helps to generate reports of code coverage.
+**ReqCoco** which stands for *Requirements Code Coverage* is a set of tools which helps to generate reports of code coverage.
 
 The reports can generated in different ways (console, html, pdf, xlsx, ...)
 
