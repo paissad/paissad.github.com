@@ -1,6 +1,6 @@
 # Site settings
 title: Paissad
-description: 'Github Personal Page where i list my main projects'
+description: 'Github Personal Page'
 url: 'https://paissad.github.io'
 baseurl: '/'
 google_analytics: 'UA-25639062-2'
