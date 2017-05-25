@@ -1,0 +1,39 @@
+# Site settings
+title: Paissad
+description: 'Personal Page'
+url: 'https://paissad.github.io'
+#baseurl: '/'
+google_analytics: 'UA-25639062-2'
+# disqus_shortname: 'your-disqus-name'
+
+author:
+  name: 'paissad'
+  email: paissad@gmail.com
+  twitter_username: paissad
+  #facebook_username: 
+  github_username:  paissad
+  #linkedin_username:  
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+gems: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']

@@ -1,113 +1,24 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
+---
+layout: default
+---
 
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <link rel="icon" href="http://paissad.github.com/favicon.ico" type="image/x-icon" />
-        <link rel="shortcut icon" href="http://paissad.github.com/favicon.ico" type="image/x-icon" />
-        <link rel="apple-touch-icon" href="http://paissad.github.com/apple-touch-icon.png" />
+<div class="main-post-list">
 
+  <ol class="post-list">
+    {% for post in paginator.posts %}
+      <li>
+        <h2 class="post-list__post-title post-title"><a href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+        <p class="excerpt">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}&hellip;</p>
+        <div class="post-list__meta"><time datetime="{{ post.date | date: "%-d %b %Y" }}" class="post-list__meta--date date">{{ post.date | date: "%-d %b %Y" }}</time> &#8226; <span class="post-meta__tags">on {% for tag in post.tags %}<a href="{{ site.baseurl }}tags/#{{ tag }}">{{ tag }}</a> {% endfor %}</span></div>
+        <hr class="post-list__divider">
+      </li>
+    {% endfor %}
+  </ol>
 
-        <title>Home</title>
-        <link rel="stylesheet" type="text/css" media="screen" href="rw_common/themes/Patchy/consolidated-screen-0.css" />
-        <link rel="stylesheet" type="text/css" media="all" href="rw_common/themes/Patchy/consolidated-all-0.css" />
+  <hr class="post-list__divider ">
 
-        <!--[if IE 6]><style type="text/css" media="screen">body {behavior: url(rw_common/themes/Patchy/csshover.htc);}</style><![endif]-->
+  {% if paginator.previous_page or paginator.next_page %}
+      {% include pagination.html %}
+  {% endif %}
 
-        <script type="text/javascript" src="rw_common/themes/Patchy/javascript.js"></script>
-        <script type="text/javascript" src="js/google_analytics.js"></script>
-
-        <link rel='stylesheet' type='text/css' media='all' href='rw_common/plugins/stacks/stacks.css' />
-        <!--[if IE]>
-        <link rel="stylesheet" type="text/css" media="all" href="rw_common/themes/Patchy/rw_common/plugins/stacks/stacks_ie.css" />
-
-        <![endif]-->
-
-    </head>
-
-    <body>
-
-        <!-- This page was created with RapidWeaver from Realmac Software. http://www.realmacsoftware.com -->
-
-        <div id="container">
-
-            <div id="siteTitle">
-                <h1>Paissad Github's Page</h1>
-                <h2>My projects hosted at GitHub</h2>
-            </div>
-
-            <div id="navBackground">
-                <div style="z-index: 3000;">
-                    <div style="position: absolute; z-index:1000;" id="navcontainer"><ul><li class="current"><a href="./" rel="self">Home</a></li><li><a href="projects/" rel="self">Projects</a></li></ul></div>
-                </div>
-            </div>
-            <div id="contentTop">
-                <div id="tapeTop"></div>
-                <div id="breadcrumb"></div>
-            </div>
-
-            <div id="backPageSide"></div>
-
-            <div id="contentMiddle">
-                <div id="sidebarContainer">
-                    <div id="logoContainer">
-
-                    </div>
-                    <div id="sidebarTitle">
-                        <h3></h3>
-                    </div>
-                    <div id="sidebarContent">
-
-                        <div id="archives">
-
-                        </div>
-                    </div>
-                </div>
-                <div id="content">
-
-
-                    <!-- Stacks v1.0.0 -->
-                    <div class='stacks_top'>
-                        <div class='stacks_out' style='width: 100%;' >
-                            <div class='stacks_in' style='margin-top: 2px;margin-bottom: 2px;margin-left: 2px;margin-right: 2px;padding-top: 5px;padding-bottom: 5px;padding-left: 5px;padding-right: 5px;' >
-                                <div id="myExtraContent1"><div class='stacks_out' style='width: 100%;' >
-                                        <div class='stacks_in' style='margin-top: 2px;margin-bottom: 2px;margin-left: 2px;margin-right: 2px;padding-top: 5px;padding-bottom: 5px;padding-left: 5px;padding-right: 5px;' >
-                                            <div class='stacks_div' style='float:right; margin-left:20px;'><div class='centered_image' ><img class="imageStyle" alt="" src="files/stacks_image_5_1.png" width="90" height="90" /></div></div>
-                                            Welcome to my GitHub's homepage.<br />You will find here some of the projects i created.<br /><br />Not all project might have been listed in this site, but i tried at list to put the one i think should be shared widely.<br />Here is the page of my profile at GitHub <a href="https://github.com/paissad">https://github.com/paissad</a>.<br />Here is my blog <a href="http://blog.paissad.net/">http://blog.paissad.net</a>.<br /><br />I hope that the projects will be really useful.<br /><br />Paissad,
-                                            <div class='stacks_clearer'></div>
-                                        </div>
-                                    </div>
-                                    <div class='stacks_clearer'></div></div><!-- #myExtraContent -->
-                                <div class='stacks_clearer'></div>
-                            </div>
-                        </div>
-                        <div class='stacks_out' style='width: 100%;' >
-                            <div class='stacks_in' style='margin-top: 2px;margin-bottom: 2px;margin-left: 2px;margin-right: 2px;padding-top: 5px;padding-bottom: 5px;padding-left: 5px;padding-right: 5px;' >
-                                <div class='centered_image' ><img class="imageStyle" alt="" src="files/stacks_image_8_1.png" width="300" height="300" /></div>
-                                <div class='stacks_clearer'></div>
-                            </div>
-                        </div>
-
-                        <div class='stacks_clearer'></div>
-                    </div>
-                    <!-- End of Stacks Content -->
-
-                </div>
-                <div class="clearer"></div>
-            </div>
-
-            <div class="clearer"></div>
-
-            <div id="contentBottom">
-                <div id="tapeBottomLeft"></div>
-                <div id="tapeBottomRight"></div>
-            </div>
-
-            <div id="backPageBottom"></div>
-
-            <div id="footer">&copy; 2011 Papa Issa DIAKHATE <a href="#" id="rw_email_contact">Contact me</a><script type="text/javascript">var _rwObsfuscatedHref0 = "mai";var _rwObsfuscatedHref1 = "lto";var _rwObsfuscatedHref2 = ":pa";var _rwObsfuscatedHref3 = "iss";var _rwObsfuscatedHref4 = "ad@";var _rwObsfuscatedHref5 = "gma";var _rwObsfuscatedHref6 = "il.";var _rwObsfuscatedHref7 = "com";var _rwObsfuscatedHref = _rwObsfuscatedHref0+_rwObsfuscatedHref1+_rwObsfuscatedHref2+_rwObsfuscatedHref3+_rwObsfuscatedHref4+_rwObsfuscatedHref5+_rwObsfuscatedHref6+_rwObsfuscatedHref7; document.getElementById('rw_email_contact').href = _rwObsfuscatedHref;</script></div>
-        </div>
-
-    </body>
-
-</html>
+</div>
